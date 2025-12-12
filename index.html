@@ -2,31 +2,197 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Studiu de caz - GIT & GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiu de Caz - GIT & GitHub</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #1f6feb;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        header img {
+            height: 60px;
+            margin: 0 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        h2 {
+            color: #1f6feb;
+            border-left: 5px solid #1f6feb;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        p, ul {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .box img {
+            width: 180px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f6feb;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Importanța utilizării aplicațiilor de lucru în echipă: GIT & GitHub</h1>
 
-    <p>
-        În dezvoltarea software modernă, colaborarea eficientă este esențială. GIT și GitHub sunt două
-        instrumente indispensabile care permit echipelor să lucreze împreună la același proiect,
-        fără riscul pierderii informațiilor sau suprascrierii codului.
-    </p>
+<header>
+    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+    <h1>Studiu de Caz: Importanța utilizării GIT & GitHub în lucrul în echipă</h1>
+</header>
 
-    <h2>Avantajele utilizării GIT & GitHub:</h2>
-    <ul>
-        <li>Controlul versiunilor – fiecare modificare este salvată.</li>
-        <li>Colaborare ușoară – mai mulți utilizatori pot lucra în paralel.</li>
-        <li>Backup sigur al proiectului în cloud.</li>
-        <li>Posibilitatea de a reveni la versiuni anterioare.</li>
-        <li>Gestionarea taskurilor prin Pull Requests și Issues.</li>
-    </ul>
+<div class="container">
 
-    <h2>Procesul de lucru într-o echipă:</h2>
-    <p>
-        Membrii echipei clonează repository-ul, își creează ramuri proprii (branches), adaugă modificări, 
-        apoi trimit Pull Requests pentru a integra munca lor în ramura principală (main).
-    </p>
+    <!-- INTRODUCERE -->
+    <div class="box">
+        <h2>Introducere</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Teamwork">
+        <p>
+            În dezvoltarea software modernă, colaborarea este esențială. Proiectele sunt realizate 
+            de echipe formate din mai mulți dezvoltatori, fiecare având sarcini diferite. Pentru a evita 
+            suprascrierea codului, conflictele sau pierderea informației, este necesar un sistem de 
+            control al versiunilor. Aici intervin GIT și GitHub – unelte indispensabile în orice 
+            proiect profesional sau educațional.
+        </p>
+    </div>
+
+    <!-- CE ESTE GIT -->
+    <div class="box">
+        <h2>Ce este GIT?</h2>
+        <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git Logo">
+        <p>
+            <strong>GIT</strong> este un sistem distribuit de control al versiunilor (Distributed Version Control System – DVCS),
+            creat de Linus Torvalds în 2005. Acesta permite oricărui dezvoltator să păstreze 
+            istoricul complet al proiectului pe propriul calculator, fără dependență de un server central.
+        </p>
+
+        <p><strong>Caracteristici principale ale GIT:</strong></p>
+        <ul>
+            <li><strong>Distribuit</strong> – fiecare utilizator are o copie completă a proiectului.</li>
+            <li><strong>Rapid</strong> – operațiile sunt locale, deci extrem de rapide.</li>
+            <li><strong>Sigur</strong> – fiecare commit este protejat criptografic cu SHA-1.</li>
+            <li><strong>Flexibil</strong> – permite lucrul pe branch-uri separate fără riscuri.</li>
+            <li><strong>Istoric complet</strong> – orice versiune poate fi recuperată.</li>
+        </ul>
+
+        <p><strong>Ce poți face cu GIT?</strong></p>
+        <ul>
+            <li>Să urmărești toate schimbările dintr-un proiect.</li>
+            <li>Să lucrezi în echipă fără suprascrierea fișierelor.</li>
+            <li>Să experimentezi pe branch-uri fără a afecta proiectul principal.</li>
+            <li>Să revii oricând la o versiune anterioară.</li>
+        </ul>
+    </div>
+
+    <!-- CE ESTE GITHUB -->
+    <div class="box">
+        <h2>Ce este GitHub?</h2>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub Logo">
+        <p>
+            <strong>GitHub</strong> este o platformă online care găzduiește repository-uri GIT. 
+            Pe lângă stocarea codului, GitHub oferă instrumente avansate de colaborare, 
+            comunicare și organizare a proiectelor.
+        </p>
+
+        <p><strong>GitHub oferă:</strong></p>
+        <ul>
+            <li><strong>Repository-uri private și publice</strong> – pentru proiecte personale sau colaborative.</li>
+            <li><strong>Issues</strong> – sistem de raportare și urmărire a problemelor.</li>
+            <li><strong>Pull Requests</strong> – verificarea modificărilor înainte de integrare.</li>
+            <li><strong>GitHub Actions</strong> – automatizări (testare, build, deploy).</li>
+            <li><strong>Wiki</strong> – documentarea proiectului.</li>
+            <li><strong>GitHub Pages</strong> – găzduirea paginilor web.</li>
+        </ul>
+
+        <p>
+            GitHub este folosit de milioane de dezvoltatori și companii din întreaga lume pentru a gestiona 
+            proiecte open-source, aplicații comerciale sau materiale educaționale.
+        </p>
+    </div>
+
+    <!-- AVANTAJE -->
+    <div class="box">
+        <h2>Avantajele utilizării GIT & GitHub</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/993/993928.png" alt="Advantages Icon">
+        <ul>
+            <li>Control total asupra versiunilor unui proiect.</li>
+            <li>Colaborare eficientă între membrii echipei.</li>
+            <li>Backup în cloud și siguranță garantată.</li>
+            <li>Posibilitatea lucrului pe branch-uri separate.</li>
+            <li>Evitarea conflictelor prin Pull Requests.</li>
+            <li>Transparența modificărilor și istoricul complet al proiectului.</li>
+            <li>Gestionarea task-urilor din Issues.</li>
+            <li>Posibilitatea de a integra CI/CD prin GitHub Actions.</li>
+        </ul>
+    </div>
+
+    <!-- PROCESUL DE LUCRU -->
+    <div class="box">
+        <h2>Cum decurge lucrul în echipă folosind GIT & GitHub?</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/1250/1250815.png" alt="Team Workflow">
+        <p>Procesul de lucru într-o echipă devine clar și structurat:</p>
+        <ul>
+            <li>Membrii clonează repository-ul.</li>
+            <li>Fiecare creează un branch propriu.</li>
+            <li>Realizează modificările necesare în proiect.</li>
+            <li>Trimit un Pull Request pentru verificare.</li>
+            <li>Echipa analizează și aprobă modificările.</li>
+            <li>Branch-ul este integrat în main.</li>
+            <li>Proiectul evoluează în mod organizat și sigur.</li>
+        </ul>
+    </div>
+
+    <!-- CONCLUZIE -->
+    <div class="box">
+        <h2>Concluzie</h2>
+        <img src="https://cdn-icons-png.flaticon.com/512/5290/5290058.png" alt="Conclusion Icon">
+        <p>
+            GIT și GitHub nu sunt doar opțiuni tehnice – sunt standarde în industria software. 
+            Ele asigură organizare, eficiență, siguranță și colaborare reală între membrii echipei. 
+            Fără aceste instrumente, dezvoltarea de aplicații ar fi mult mai greoaie, 
+            predispusă la erori și dificil de gestionat.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Studiu de caz - GIT & GitHub | Proiect demonstrativ
+</footer>
 
 </body>
 </html>
